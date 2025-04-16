@@ -5,7 +5,14 @@
     list-style: none;
     text-decoration: none;
     color: #000;
+    overflow-x: hidden;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 
 header, ul {
     display: flex;
@@ -36,4 +43,19 @@ li:hover, .active:hover {
 .active {
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
+}
+  
+
+main {
+    flex: 1;
+}
+
+
+footer {
+    background-color: #581411;
+    text-align: center;
+    padding: 25px 0;
+}
+footer p {
+    color: #fff;
 }
