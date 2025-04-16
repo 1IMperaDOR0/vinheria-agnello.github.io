@@ -16,6 +16,22 @@ header {
     padding: 0 40px;
     background-color: #581411;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+
+  main {
+    flex: 1;
+  }
+footer {
+    background-color: #581411;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
 #logo {
     height: 112.5px;
     width: 112.5px;
