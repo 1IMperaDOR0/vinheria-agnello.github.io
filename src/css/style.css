@@ -28,13 +28,12 @@ ul {
 li {
     color: #fff;
 }
-li:hover {
+li:hover, .active:hover {
     color: #f0cfaf;
+    border-bottom: 2px solid #f0cfaf;
+    padding-bottom: 5px;
 }
 .active {
     border-bottom: 2px solid #fff;
     padding-bottom: 5px;
-}
-.active:hover {
-    border-bottom: 2px solid #f0cfaf;
 }
