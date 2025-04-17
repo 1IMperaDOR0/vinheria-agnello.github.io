@@ -1,36 +1,19 @@
-let totalSlides = document.querySelectorAll('.carrossel').length;
+const container = document.querySelector('.carrossel-container');
+const slides = document.querySelectorAll('.carrossel');
 let currentSlide = 0;
 
-let sliderWidth = document.querySelector('#carrossel').clientWidth;
-
-document.querySelector('#carrossel').style.width = 
-    '${sliderWidth * totalSlides}px';
-
-document.querySelector('.slider--controls').style.width = '${sliderWidth}px';
-
-document.querySelector('.slider--controls').style.height = 
-    '${document.querySelector(".slider").clientHeight}px';
-
-function goPrev() {
-    currentSlide--;
-    if(currentSlide < 0) {
-        currentSlide = totalSlides - 1;
-    }
-    updateMargin();
+function showSlide(index) {
+    const offset = -index * 100;
+    container.style.transform = `translateX(${offset}vw)`;
 }
-function goNext() {
+
+function nextSlide() {
     currentSlide++;
-    if(currentSlide > (totalSlides-1)) {
+    if (currentSlide >= slides.length) {
         currentSlide = 0;
     }
-    updateMargin();
+    showSlide(currentSlide);
 }
 
-function updateMargin() {
-    let sliderItemWidth = document.querySelector('.carrossel').clientWidth;
-    let newMargin = (currentSlide * sliderItemWidth);
-    document.querySelector('#carrossel').style.marginLeft = 
-        '-${newMargin}px';
-}
-
-setInterval(goNext, 5000);
+showSlide(currentSlide);
+setInterval(nextSlide, 5500);
