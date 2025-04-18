@@ -189,3 +189,21 @@
     justify-content: center;
     margin-top: 20px;
 }
+
+@media(max-width: 918px) {
+    #apresentacao div{
+        width: 500px;
+    }
+    #tabela, #beneficios {
+        width: 440px;
+    }
+}
+
+@media(max-width: 425px) {
+    #apresentacao div {
+        width: 300px;
+    }
+    #tabela, #beneficios {
+        width: 400px;
+    }
+}
