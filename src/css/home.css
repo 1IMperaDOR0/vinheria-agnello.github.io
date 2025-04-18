@@ -102,12 +102,11 @@
     font-size: 60px;
 }
 #tabela {
-    margin: 50px auto;
+    margin: 50px;
     padding: 20px;
     background: #fdf8f3;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(88, 20, 17, 0.15);
-    overflow-x: auto;
 }
 #tabela h2 {
     text-align: center;
