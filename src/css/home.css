@@ -38,7 +38,7 @@
     font-size: 40px;
     margin-bottom: 15px;
 }
-#carrossel-1 button, #apresentacao button, #planos button {
+#carrossel-1 button, #apresentacao button, .planos-assinatura button {
     border: 0;
     padding: 20px 50px;
     cursor: pointer;
@@ -48,7 +48,7 @@
     font-size: 20px;
     transition: 0.3s linear, color 0.3s linear;
 }
-#carrossel-1 button:hover, #apresentacao button:hover, #planos button:hover {
+#carrossel-1 button:hover, #apresentacao button:hover, .planos-assinatura button:hover {
     background-color: #fff;
     color: #581411;
 }
@@ -62,7 +62,7 @@
 #apresentacao div{
     width: 900px;
 }
-#tabela, #beneficios {
+.tabela {
     width: 860px;
 }
 
@@ -101,26 +101,25 @@
     text-align: center;
     font-size: 60px;
 }
-#tabela {
-    margin: 50px;
+.tabela {
     padding: 20px;
     background: #fdf8f3;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(88, 20, 17, 0.15);
 }
-#tabela h2 {
+.tabela h2 {
     text-align: center;
     font-size: 30px;
     color: #581411;
     margin-bottom: 40px;
 }
-#tabela table {
+.tabela table {
     width: 100%;
     border-collapse: collapse;
     font-size: 16px;
     color: #333;
 }
-#tabela thead th {
+.tabela thead th {
     background-color: #581411;
     color: #fff;
     padding: 16px 12px;
@@ -128,37 +127,26 @@
     font-weight: bold;
     font-size: 18px;
 }
-#tabela tbody td {
+.tabela tbody td {
     padding: 14px 12px;
     text-align: center;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
 }
-#tabela tbody tr:nth-child(even) td {
+.tabela tbody tr:nth-child(even) td {
     background-color: #f5ebe0;
 }
-#tabela tbody tr:hover td {
+.tabela tbody tr:hover td {
     background-color: #f0cfaf;
     transition: 0.3s ease;
 }
-#beneficios {
-    padding: 20px;
-    background-color: #fdf8f3;
-    border-radius: 16px;
-    box-shadow: 0 0 10px rgba(88, 20, 17, 0.1);
-}
-#beneficios h2 {
-    text-align: center;
-    font-size: 30px;
-    color: #581411;
-    margin-bottom: 40px;
-}
-#beneficios ul {
+.tabela ul {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    margin-top: 40px;
 }
-#beneficios ul li {
+.tabela ul li {
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -168,23 +156,23 @@
     border-radius: 10px;
     transition: box-shadow 0.3s ease;
 }
-#beneficios ul li:hover {
+.tabela ul li:hover {
     box-shadow: 0 4px 12px rgba(88, 20, 17, 0.2);
 }
-#beneficios ul .emoji {
+.tabela ul .emoji {
     font-size: 28px;
     margin-top: 4px;
 }
-#beneficios ul strong {
+.tabela ul strong {
     font-size: 18px;
     color: #581411;
 }
-#beneficios ul p {
+.tabela ul p {
     margin: 5px 0 0 0;
     font-size: 16px;
     color: #333;
 }  
-#beneficios .planos-assinatura {
+.tabela .planos-assinatura {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -194,7 +182,7 @@
     #apresentacao div{
         width: 500px;
     }
-    #tabela, #beneficios {
+    .tabela {
         width: 440px;
     }
 }
@@ -203,7 +191,7 @@
     #apresentacao div {
         width: 300px;
     }
-    #tabela, #beneficios {
+    .tabela {
         width: 400px;
     }
 }
