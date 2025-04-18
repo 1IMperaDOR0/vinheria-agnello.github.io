@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinheria Agnello</title>
-    <link rel="shortcut icon" type="imagex/png" href="src/assets/images/logo-icon-1.png">
+    <link rel="shortcut emoji" type="imagex/png" href="src/assets/images/logo-emoji-1.png">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <link rel="stylesheet" type="text/css" href="src/css/home.css">
 </head>
@@ -13,23 +13,25 @@
 <body>
     <header>
         <a href="src/pages/historia.html"><img id="logo" src="src/assets/images/logo.png" alt="logo"></a>
-        <ul>
-            <a href="index.html">
-                <li class="active">Home</li>
-            </a>
-            <a href="src/pages/historia.html">
-                <li>História</li>
-            </a>
-            <a href="src/pages/produtos.html">
-                <li>Produtos</li>
-            </a>
-            <a href="src/pages/login-cadastro.html">
-                <li>Login/Cadastro</li>
-            </a>
-            <a href="src/pages/suporte.html">
-                <li>Suporte</li>
-            </a>
-        </ul>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li class="active">Home</li>
+                </a>
+                <a href="src/pages/historia.html">
+                    <li>História</li>
+                </a>
+                <a href="src/pages/produtos.html">
+                    <li>Produtos</li>
+                </a>
+                <a href="src/pages/login-cadastro.html">
+                    <li>Login/Cadastro</li>
+                </a>
+                <a href="src/pages/suporte.html">
+                    <li>Suporte</li>
+                </a>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -62,18 +64,82 @@
             </div>
         </section>
         <section id="planos">
-            <h1>Planos</h1>
-            <div class="planos-lista">
-                <div>
-                    
-                </div>
-                <div>
-                    
-                </div>
-                <div>
-                    
-                </div>
+            <h1>Nossos planos</h1>
+            <div id="tabela">
+                <h2>Conheça nossos planos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Planos</th>
+                            <th>Rótulos por mês</th>
+                            <th>Tipo de vinho</th>
+                            <th>Preço mensal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Essencial</td>
+                            <td>2</td>
+                            <td>Nacionais</td>
+                            <td>R$ 129,90</td>
+                        </tr>
+                        <tr>
+                            <td>Clássico</td>
+                            <td>3</td>
+                            <td>Nacionais e importados</td>
+                            <td>R$ 189,90</td>
+                        </tr>
+                        <tr>
+                            <td>Reserva</td>
+                            <td>4</td>
+                            <td>Premium e exclusivos</td>
+                            <td>R$ 269,90</td>
+                        </tr>
+                        <tr>
+                            <td>Gran Reserva</td>
+                            <td>6</td>
+                            <td>Alta gama + curadoria pessoal</td>
+                            <td>R$ 389,90</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <div id="beneficios">
+                <h2>Benefícios do Clube Vinheria Agnello</h2>
+                <ul>
+                  <li>
+                    <div>
+                      <strong><span class="emoji">🍷</span> Curadoria especializada</strong>
+                      <p>Seleção feita por especialistas com mais de 15 anos de experiência.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <strong><span class="emoji">🍽️</span> Harmonização inteligente</strong>
+                      <p>Cada rótulo acompanha sugestões de pratos e ocasiões ideais.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <strong><span class="emoji">🎁</span> Benefícios exclusivos</strong>
+                      <p>Brindes e vantagens especiais para membros dos planos avançados.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <strong><span class="emoji">🚚</span> Entrega flexível</strong>
+                      <p>Retirada na loja ou entrega com frete fixo ou gratuito.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <strong><span class="emoji">🤝</span> Atendimento humano</strong>
+                      <p>Suporte direto e personalizado, como você já conhece na loja física.</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="planos-assinatura"><button>ASSINE SEU PLANO</button></div>
+            </div>             
         </section>
     </main>
 
@@ -81,6 +147,7 @@
         <p>&copy; 2025 Vinheria Agnello. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="src/js/home.js"></script>
     <script src="src/js/script.js"></script>
 </body>
 
