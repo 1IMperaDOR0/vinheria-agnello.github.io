@@ -79,7 +79,7 @@
     align-items: center;
     gap: 30px;
 }
-#apresentacao h1 {
+#apresentacao h1, #canal h1 {
     text-align: center;
     font-size: 60px;
     color: #581411;
@@ -178,6 +178,18 @@
     margin-top: 20px;
 }
 
+#canal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 100%;
+    background-color: #fdf8f3;
+}
+iframe {
+    margin-top: 30px;
+}
+
 @media(max-width: 918px) {
     #apresentacao div{
         width: 500px;
@@ -185,13 +197,21 @@
     .tabela {
         width: 440px;
     }
+    iframe {
+        width: 500px;
+        height: 300px;
+    }
 }
 
 @media(max-width: 425px) {
     #apresentacao div {
-        width: 300px;
+        width: 320px;
     }
     .tabela {
         width: 400px;
+    }
+    iframe {
+        width: 320px;
+        height: 200px;
     }
 }
