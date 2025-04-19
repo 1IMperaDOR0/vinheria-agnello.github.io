@@ -84,7 +84,7 @@
     font-size: 60px;
     color: #581411;
 }
-#apresentacao p {
+#apresentacao p, #canal p {
     font-size: 20px;
 } 
 
@@ -185,10 +185,14 @@
     width: 100%;
     background-color: #fdf8f3;
 }
+#canal p {
+    text-align: center;
+}
 #canal-container {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
     width: 900px;
 }
 iframe {
@@ -227,6 +231,9 @@ iframe {
 }
 
 @media(max-width: 530px) {
+    #apresentacao p, #canal p {
+        font-size: 15px;
+    }
     #apresentacao-container, #canal-container {
         width: 320px;
     }
