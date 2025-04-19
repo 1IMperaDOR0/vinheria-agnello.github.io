@@ -14,23 +14,32 @@
     <header>
         <a href="src/pages/historia.html"><img id="logo" src="src/assets/images/logo.png" alt="logo"></a>
         <nav>
-            <ul>
-                <a href="index.html">
-                    <li class="active">Home</li>
-                </a>
-                <a href="src/pages/historia.html">
-                    <li>História</li>
-                </a>
-                <a href="src/pages/produtos.html">
-                    <li>Produtos</li>
-                </a>
-                <a href="src/pages/login-cadastro.html">
-                    <li>Login/Cadastro</li>
-                </a>
-                <a href="src/pages/suporte.html">
-                    <li>Suporte</li>
-                </a>
-            </ul>
+            <div class="menu-icon">
+                <img src="src/assets/images/icon-menu.png">
+            </div>
+            <div class="menu-lista-back"></div>
+            <div class="menu-lista">
+                    <div class="menu-icon-close">
+                        <img src="src/assets/images/icon-menu-close.png">
+                    </div>
+                    <ul>
+                        <a href="index.html">
+                            <li class="active">Home</li>
+                        </a>
+                        <a href="src/pages/historia.html">
+                            <li>História</li>
+                        </a>
+                        <a href="src/pages/produtos.html">
+                            <li>Produtos</li>
+                        </a>
+                        <a href="src/pages/login-cadastro.html">
+                            <li>Login/Cadastro</li>
+                        </a>
+                        <a href="src/pages/suporte.html">
+                            <li>Suporte</li>
+                        </a>
+                    </ul>
+            </div>
         </nav>
     </header>
 
@@ -53,7 +62,7 @@
             </div>
         </section>
         <section id="apresentacao">
-            <div>
+            <div id="apresentacao-container">
                 <h1>Quem nós somos?</h1>
                 <p>A Vinheria Agnello é uma empresa familiar com mais de 15 anos de tradição no mercado de vinhos, localizada em São Paulo. Fundada e dirigida por Giulio Agnello, com o apoio de sua filha Bianca, a vinheria conta com uma equipe dedicada de 6 colaboradores, atuando nas áreas de administração, estoque e vendas em sua loja física.</p>
                 <p>Ao longo dos anos, a Vinheria Agnello conquistou reconhecimento por oferecer uma seleção criteriosa de rótulos nacionais e internacionais, com atendimento personalizado e profundo conhecimento sobre vinhos. Um dos grandes diferenciais da empresa é o preparo de seus vendedores, que orientam os clientes sobre características específicas de uvas, vinícolas, regiões e harmonizações ideais para diferentes pratos e ocasiões.</p>
@@ -64,83 +73,87 @@
             </div>
         </section>
         <section id="planos">
-            <h1>Nossos planos</h1>
-            <div class="tabela">
-                <h2>Benefícios do Clube Vinheria Agnello</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Planos</th>
-                            <th>Rótulos por mês</th>
-                            <th>Tipo de vinho</th>
-                            <th>Preço mensal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Essencial</td>
-                            <td>2</td>
-                            <td>Nacionais</td>
-                            <td>R$ 129,90</td>
-                        </tr>
-                        <tr>
-                            <td>Clássico</td>
-                            <td>3</td>
-                            <td>Nacionais e importados</td>
-                            <td>R$ 189,90</td>
-                        </tr>
-                        <tr>
-                            <td>Reserva</td>
-                            <td>4</td>
-                            <td>Premium e exclusivos</td>
-                            <td>R$ 269,90</td>
-                        </tr>
-                        <tr>
-                            <td>Gran Reserva</td>
-                            <td>6</td>
-                            <td>Alta gama + curadoria pessoal</td>
-                            <td>R$ 389,90</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <ul>
-                  <li>
-                    <div>
-                      <strong><span class="emoji">🍷</span> Curadoria especializada</strong>
-                      <p>Seleção feita por especialistas com mais de 15 anos de experiência.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <strong><span class="emoji">🍽️</span> Harmonização inteligente</strong>
-                      <p>Cada rótulo acompanha sugestões de pratos e ocasiões ideais.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <strong><span class="emoji">🎁</span> Benefícios exclusivos</strong>
-                      <p>Brindes e vantagens especiais para membros dos planos avançados.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <strong><span class="emoji">🚚</span> Entrega flexível</strong>
-                      <p>Retirada na loja ou entrega com frete fixo ou gratuito.</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <strong><span class="emoji">🤝</span> Atendimento humano</strong>
-                      <p>Suporte direto e personalizado, como você já conhece na loja física.</p>
-                    </div>
-                  </li>
-                </ul>
-                <div class="planos-assinatura"><button>ASSINE SEU PLANO</button></div>
-            </div>             
+            <div class="planos-container">
+                <h1>Nossos planos</h1>
+                <div class="tabela">
+                    <h2>Benefícios do Clube Vinheria Agnello</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Planos</th>
+                                <th>Rótulos por mês</th>
+                                <th>Tipo de vinho</th>
+                                <th>Preço mensal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Essencial</td>
+                                <td>2</td>
+                                <td>Nacionais</td>
+                                <td>R$ 129,90</td>
+                            </tr>
+                            <tr>
+                                <td>Clássico</td>
+                                <td>3</td>
+                                <td>Nacionais e importados</td>
+                                <td>R$ 189,90</td>
+                            </tr>
+                            <tr>
+                                <td>Reserva</td>
+                                <td>4</td>
+                                <td>Premium e exclusivos</td>
+                                <td>R$ 269,90</td>
+                            </tr>
+                            <tr>
+                                <td>Gran Reserva</td>
+                                <td>6</td>
+                                <td>Alta gama + curadoria pessoal</td>
+                                <td>R$ 389,90</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                    <li>
+                        <div>
+                        <strong><span class="emoji">🍷</span> Curadoria especializada</strong>
+                        <p>Seleção feita por especialistas com mais de 15 anos de experiência.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                        <strong><span class="emoji">🍽️</span> Harmonização inteligente</strong>
+                        <p>Cada rótulo acompanha sugestões de pratos e ocasiões ideais.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                        <strong><span class="emoji">🎁</span> Benefícios exclusivos</strong>
+                        <p>Brindes e vantagens especiais para membros dos planos avançados.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                        <strong><span class="emoji">🚚</span> Entrega flexível</strong>
+                        <p>Retirada na loja ou entrega com frete fixo ou gratuito.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                        <strong><span class="emoji">🤝</span> Atendimento humano</strong>
+                        <p>Suporte direto e personalizado, como você já conhece na loja física.</p>
+                        </div>
+                    </li>
+                    </ul>
+                    <div class="planos-assinatura"><button>ASSINE SEU PLANO</button></div>
+                </div>      
+            </div>       
         </section>
         <section id="canal">
-            <h1>Confira nosso canal no YouTube</h1>
-            <iframe width="900" height="500" src="https://www.youtube.com/embed/knBF1qolRrk?si=9JlW2OD9pjWqcEjj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="canal-container">
+                <h1>Confira nosso canal no YouTube</h1>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/knBF1qolRrk?si=9JlW2OD9pjWqcEjj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
 
