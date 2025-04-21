@@ -259,14 +259,20 @@ button:hover {
     h2 {
         font-size: 25px;
     }
+    .tabela thead th, td {
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 530px) {
     h2 {
         font-size: 20px;
     }
-    p, button {
+    p, .tabela ul p, button {
         font-size: 15px;
+    }
+    .tabela thead th, td {
+        font-size: 13px;
     }
     .container {
         width: 400px;
