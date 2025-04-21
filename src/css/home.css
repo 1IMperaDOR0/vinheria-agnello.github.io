@@ -2,6 +2,9 @@ h1 {
     font-size: 60px;
     text-align: center;
 }
+h2 {
+    font-size: 30px;
+}
 p {
     font-size: 20px;
 }
@@ -39,7 +42,6 @@ p {
     color: #fff;
 }
 #carrossel-1 h1 {
-    font-size: 65px;
     margin-bottom: 10px;
     text-align: start;
 }
@@ -104,7 +106,6 @@ button:hover {
 }
 #conquistas-imagem h2 {
     text-align: center;
-    font-size: 30px;
     color: #fdf8f3;
 }
 #conquistas-imagem img {
@@ -148,7 +149,6 @@ button:hover {
 }
 .tabela h2 {
     text-align: center;
-    font-size: 30px;
     color: #581411;
     margin-bottom: 20px;
 }
@@ -225,20 +225,20 @@ button:hover {
 }
 
 @media(max-width: 918px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 25px;
+    }
     #carrossel-1 p {
         font-size: 20px;
-    }
-    #carrossel-1 h1, #apresentacao h1, #planos h1, #canal h1 {
-        font-size: 30px;
     }
     #carrossel-1 button, #apresentacao button, .planos-assinatura button {
         font-size: 20px;
     }
     .container{
         width: 500px;
-    }
-    h2 {
-        font-size: 25px;
     }
     .tabela {
         width: 440px;
@@ -253,9 +253,18 @@ button:hover {
     #carrossel {
         display: none;
     }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
 }
 
 @media(max-width: 530px) {
+    h2 {
+        font-size: 20px;
+    }
     p, button {
         font-size: 15px;
     }
