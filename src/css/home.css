@@ -1,3 +1,11 @@
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+}
+
 #carrossel {
     width: 100vw;
     height: calc(100vh - 136.5px);
@@ -33,13 +41,15 @@
 #carrossel-1 h1 {
     font-size: 65px;
     margin-bottom: 10px;
+    text-align: start;
 }
-#carrossel-1 p {
+#carrossel-1 p, #carrosel-1 button {
     font-size: 40px;
     margin-bottom: 15px;
 }
-#carrossel-1 button, #apresentacao button, .planos-assinatura button {
+button {
     border: 0;
+    border-radius: 25px;
     padding: 20px 50px;
     cursor: pointer;
     background-color: #581411;
@@ -48,7 +58,7 @@
     font-size: 20px;
     transition: 0.3s linear, color 0.3s linear;
 }
-#carrossel-1 button:hover, #apresentacao button:hover, .planos-assinatura button:hover {
+button:hover {
     background-color: #fff;
     color: #581411;
 }
@@ -59,11 +69,54 @@
     background-image: url(../assets/images/carrossel-3.png);
 }
 
-#apresentacao-container, #planos-container, #canal-container{
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     width: 900px;
 }
+
 .tabela {
     width: 860px;
+}
+
+#conquistas {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    width: 100%;
+    background-color: #eee;
+}
+#conquistas p, #apresentacao p, #canal p {
+    text-align: justify;
+    padding: 0 20px;
+} 
+#conquistas-imagem {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #581411;
+    border-radius: 12px;
+}
+#conquistas-imagem h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #fdf8f3;
+}
+#conquistas-imagem img {
+    width: 100%;
+}
+#conquistas-imagem button {
+    background-color: #fff;
+    color: #581411;
+}
+#conquistas-imagem button:hover {
+    background-color: #3a0300;
+    color: #fff;
 }
 
 #apresentacao {
@@ -73,35 +126,21 @@
     width: 100%;
     background-color: #fdf8f3;
 }
-#apresentacao-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
 #apresentacao h1, #canal h1 {
-    text-align: center;
-    font-size: 60px;
     color: #581411;
 }
-#apresentacao p, #canal p {
-    font-size: 20px;
-} 
 
 #planos {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     padding: 50px;
     width: 100%;
     background-color: #eee;
 }
-#planos h1 {
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 30px;
-}
 .tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     background: #fdf8f3;
     border-radius: 12px;
@@ -111,7 +150,7 @@
     text-align: center;
     font-size: 30px;
     color: #581411;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .tabela table {
     width: 100%;
@@ -121,16 +160,14 @@
 }
 .tabela thead th {
     background-color: #581411;
-    color: #fff;
-    padding: 16px 12px;
-    text-align: center;
+    color: #fff;    padding: 16px 12px;
     font-weight: bold;
     font-size: 18px;
 }
 .tabela tbody td {
     padding: 14px 12px;
-    text-align: center;
     border-bottom: 1px solid #ddd;
+    text-align: center;
     background-color: #fff;
 }
 .tabela tbody tr:nth-child(even) td {
@@ -145,19 +182,20 @@
     flex-direction: column;
     gap: 25px;
     margin-top: 40px;
+    width: 100%;
 }
 .tabela ul li {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    padding: 20px;
     background: #fff;
     border-left: 5px solid #581411;
-    padding: 20px;
     border-radius: 10px;
     transition: 0.3s ease;
 }
 .tabela ul li:hover {
-    box-shadow: 0 4px 12px rgba(88, 20, 17, 0.2);
+    box-shadow: 0 4px 12px rgba(88, 20, 17, 0.15);
 }
 .tabela ul .emoji {
     font-size: 28px;
@@ -185,19 +223,6 @@
     width: 100%;
     background-color: #fdf8f3;
 }
-#canal p {
-    text-align: center;
-}
-#canal-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    width: 900px;
-}
-iframe {
-    margin-top: 30px;
-}
 
 @media(max-width: 918px) {
     #carrossel-1 p {
@@ -209,10 +234,10 @@ iframe {
     #carrossel-1 button, #apresentacao button, .planos-assinatura button {
         font-size: 20px;
     }
-    #apresentacao-container, #canal-container{
+    .container{
         width: 500px;
     }
-    #planos h2 {
+    h2 {
         font-size: 25px;
     }
     .tabela {
@@ -231,14 +256,14 @@ iframe {
 }
 
 @media(max-width: 530px) {
-    #apresentacao p, #canal p {
+    p, button {
         font-size: 15px;
     }
-    #apresentacao-container, #canal-container {
-        width: 320px;
+    .container {
+        width: 400px;
     }
     .tabela {
-        width: 400px;
+        width: 360px;
     }
     iframe {
         width: 320px;
