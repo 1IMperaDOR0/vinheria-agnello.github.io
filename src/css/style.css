@@ -76,6 +76,7 @@ footer p {
     .menu-lista-back {
         display: none;
         position: fixed;
+        z-index: 1;
         top: 0;
         bottom: 0;
         right: 0;
@@ -90,6 +91,7 @@ footer p {
         align-items: end;
         gap: 50px;
         position: fixed;
+        z-index: 1;
         padding: 20px;
         padding-right: 40px;
         top: 0;
