@@ -7,6 +7,7 @@
     <title>Vinheria Agnello</title>
     <link rel="shortcut icon" type="imagex/png" href="../assets/images/logo-icon-1.png">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../css/suporte.css">
 </head>
 
 <body>
@@ -18,35 +19,60 @@
             </div>
             <div class="menu-lista-back"></div>
             <div class="menu-lista">
-                    <div class="menu-icon-close">
-                        <img src="../assets/images/icon-menu-close.png">
-                    </div>
-                    <ul>
-                        <a href="../../index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="../pages/historia.html">
-                            <li>História</li>
-                        </a>
-                        <a href="../pages/produtos.html">
-                            <li>Produtos</li>
-                        </a>
-                        <a href="../pages/login-cadastro.html">
-                            <li>Login/Cadastro</li>
-                        </a>
-                        <a href="../pages/suporte.html">
-                            <li class="active">Suporte</li>
-                        </a>
-                    </ul>
+                <div class="menu-icon-close">
+                    <img src="../assets/images/icon-menu-close.png">
+                </div>
+                <ul>
+                    <a href="../../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../pages/historia.html">
+                        <li>História</li>
+                    </a>
+                    <a href="../pages/produtos.html">
+                        <li>Produtos</li>
+                    </a>
+                    <a href="../pages/login-cadastro.html">
+                        <li>Login/Cadastro</li>
+                    </a>
+                    <a href="../pages/suporte.html">
+                        <li class="active">Suporte</li>
+                    </a>
+                </ul>
             </div>
         </nav>
     </header>
 
     <main>
 
+        <section id="formulario-contato">
+            <h2>Formulário de Contato</h2>
+            <p>Mande para nós o seu problema:</p>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar Mensagem</button>
+
+
+        </section>
+    </main>
     </main>
 
     <footer>
+        <div class="container"></div>
         <p>&copy; 2025 Vinheria Agnello. Todos os direitos reservados.</p>
     </footer>
 
