@@ -75,3 +75,22 @@ main {
     border: 2px solid rgba(128, 0, 128, 0.5);
     color: #fff;
 }
+
+.possui_conta {
+    margin: 20px 0 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.possui_conta a {
+    color: #fff;
+    font-weight: 600;
+}
+
+p {
+    color: #fff;
+}
+
+.possui_conta a:hover{
+    text-decoration: underline;
+}
