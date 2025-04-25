@@ -19,7 +19,6 @@ header {
     align-items: center;
     padding: 0 40px;
     background-color: #581411;
-    position: fixed;
 }
 #logo {
     height: 112.5px;
@@ -70,9 +69,6 @@ footer p {
 }
 
 @media(max-width: 710px) {
-    header {
-        position: none;
-    }
     header ul {
         flex-direction: column;
         width: 90%;
