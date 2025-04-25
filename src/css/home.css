@@ -299,4 +299,13 @@ button:hover {
         width: 400px;
         height: 250px;
     }
+    #patrocinadores-imagens {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+    #patrocinadores-imagens a  {
+        width: 80%;
+    }
 }
