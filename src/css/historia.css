@@ -1,5 +1,4 @@
 body {
-    line-height: 1.6;
     background-color: antiquewhite;
     color: #333;
 }
@@ -14,7 +13,7 @@ main {
 main h1 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #800000;
 }
 
