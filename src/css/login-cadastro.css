@@ -1,15 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 110vh;
-    background: url(../assets/images/login-cadastro.png) center/cover no-repeat;
+   justify-content: center;
+   min-height: 110vh;
+   padding: 40px 0;
+   background-image:url(../assets/images/login-cadastro.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
 }
 
 .principal {
