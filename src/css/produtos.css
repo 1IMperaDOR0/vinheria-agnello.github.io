@@ -34,6 +34,11 @@ section:nth-child(even) {
 }
 
 .cards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
     flex: 1 1 calc(33.333% - 1rem); 
     max-width: calc(33.333% - 1rem); 
     box-sizing: border-box; 

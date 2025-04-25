@@ -8,7 +8,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 110vh;
     background-image: url(../assets/images/login-cadastro.png);
     background-repeat: no-repeat;
     background-size: cover;
