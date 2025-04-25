@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box; 
+}
+
+.produtos {
+    padding: 0;
+}
+
+section {
+    padding: 45px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(odd) {
+    background-color: #eee;
+}
+
+section:nth-child(even) {
+    background-color: #fdf8f3;
+}
+
+.container {
+    width: 900px;
+}
+
+.cards {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    margin-top: 1rem; 
+}
+
+.cards div {
+    flex: 1 1 calc(33.333% - 1rem); 
+    max-width: calc(33.333% - 1rem); 
+    box-sizing: border-box; 
+    padding: 1rem;
+    text-align: center; 
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+img {
+    width: 4rem;
+}
