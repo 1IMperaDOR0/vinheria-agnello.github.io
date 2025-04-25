@@ -224,6 +224,21 @@ button:hover {
     background-color: #fdf8f3;
 }
 
+#patrocinadores {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
+    background-color: #eee;
+}
+#patrocinadores-imagens {
+    display: flex;
+    align-items: center;
+}
+#patrocinadores-imagens a, #patrocinadores-imagens img  {
+    width: 100%;
+}
+
 @media(max-width: 918px) {
     h1 {
         font-size: 40px;
