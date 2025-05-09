@@ -1,0 +1,34 @@
+/*Efeitos HOME*/
+button {
+    transition: 0.3s linear;
+}
+.container button:hover {
+    padding: 25px 55px;
+    font-size: 23px;
+    transform: translate(0, 15px);
+}
+#patrocinadores-imagens a:hover {
+    animation-name: rodar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rodar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*Efetios HISTORIA*/
+
+
+/*Efeitos PRODUTOS*/
+
+
+/*Efeitos LOGIN-CADASTRO*/
+
+
+/*Efeitos SUPORTE*/

@@ -58,7 +58,7 @@ button {
     color: #fff;
     font-weight: bold;
     font-size: 20px;
-    transition: 0.3s linear, color 0.3s linear;
+    transition: 0.3s linear;
 }
 button:hover {
     background-color: #fff;
@@ -245,22 +245,8 @@ button:hover {
     align-items: center;
     height: 300px;
 }
-#patrocinadores-imagens a:hover {
-    animation-name: rodar;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-}
 #patrocinadores-imagens a, #patrocinadores-imagens img  {
     width: 100%;
-}
-
-@keyframes rodar {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 @media(max-width: 918px) {
