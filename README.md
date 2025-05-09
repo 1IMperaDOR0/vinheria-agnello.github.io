@@ -102,7 +102,7 @@ Estrutura:
 
 ---
 
-## 😎 Efeitos Visuais
+## 😎 Efeitos visuais
 
 ### 🏠 `index.html` – Home
 

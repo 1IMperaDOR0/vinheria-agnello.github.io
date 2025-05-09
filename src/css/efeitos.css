@@ -1,3 +1,9 @@
+/*Efeito geral*/
+*::selection {
+    background-color: #3a0300;
+    color: #ccc;
+}
+
 /*Efeitos HOME*/
 button {
     transition: 0.3s linear;
@@ -11,6 +17,37 @@ button {
     animation-name: rodar;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
+}
+
+/*Desculpa por usar conceitos de Flexbox (como eu já tinha um pouco de conhecimento e utilizava nos meus projetos, pareceu algo "automático"),
+porém não vou conseguir alterar tudo a tempo, ou seja, trocar os displays que contém flex, pois ia "quebrar" a estrutura do site. 
+Mas as novas adições não terão mais isso, apenas se for solicitado em Checkpoints futuros.*/
+
+#perguntas {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #fdf8f3;
+}
+#perguntas .container {
+    margin: auto;
+}
+#perguntas h1, #perguntas h2{
+    margin-bottom: 20px;
+    color: #581411;
+}
+#perguntas div:hover{
+    box-shadow: 0 5px 12px rgba(88, 20, 17, 0.15);
+}
+#perguntas div:not(.perguntas-secoes) {
+    box-shadow: none;
+}
+#perguntas .perguntas-secoes {
+    border-left: 5px solid #581411;
+    background-image: linear-gradient(to right, #f0cfaf, #fff);
+    width: calc(100% - 45px);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px 0;
 }
 
 @keyframes rodar {

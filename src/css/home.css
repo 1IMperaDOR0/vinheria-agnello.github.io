@@ -168,7 +168,8 @@ button:hover {
 }
 .tabela thead th {
     background-color: #581411;
-    color: #fff;    padding: 16px 12px;
+    color: #fff;    
+    padding: 16px 12px;
     font-weight: bold;
     font-size: 18px;
 }
@@ -195,8 +196,9 @@ button:hover {
 .tabela ul li {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
+    margin-bottom: 10px;
     background: #fff;
     border-left: 5px solid #581411;
     border-radius: 10px;
@@ -204,7 +206,7 @@ button:hover {
     background-image: linear-gradient(to right, #f0cfaf, #fff);
 }
 .tabela ul li:hover {
-    box-shadow: 0 4px 12px rgba(88, 20, 17, 0.15);
+    box-shadow: 0 5px 12px rgba(88, 20, 17, 0.15);
 }
 .tabela ul .emoji {
     font-size: 28px;
