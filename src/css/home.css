@@ -79,12 +79,12 @@ button:hover {
     width: 900px;
 }
 .container button {
-    margin: 25px;
+    margin: 17.5px;
 }
 .container button:hover {
-    animation-name: pulo;
-    animation-duration: 0.45s;
-    animation-iteration-count: infinite;
+    padding: 25px 55px;
+    font-size: 23px;
+    transform: translate(0, 15px);
 }
 
 .tabela {
@@ -252,21 +252,6 @@ button:hover {
 }
 #patrocinadores-imagens a, #patrocinadores-imagens img  {
     width: 100%;
-}
-
-@keyframes pulo {
-    0% {
-        transform: translate(0);
-    }
-    50% {
-        transform: translate(0, 15px);
-    }
-    75% {
-        transform: translate(0, -15px);
-    }
-    100% {
-        transform: translate(0);
-    }
 }
 
 @keyframes rodar {
