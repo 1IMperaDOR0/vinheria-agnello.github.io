@@ -102,6 +102,38 @@ Estrutura:
 
 ---
 
+## Efeitos Visuais
+
+### 🏠 `index.html` – Home
+
+
+---
+
+### 📖 `historia.html` – História
+
+
+---
+
+### 🛍️ `produtos.html` – Vinhos
+
+
+---
+
+### 🔐 `login-cadastro.html` – Login
+
+
+---
+
+### 📝 `cadastro.html` – Cadastro
+
+
+---
+
+### 📬 `suporte.html` – Formulário de Contato
+
+
+---
+
 ## 👥 Integrantes A-Z
 
 - Gabriel Oliveira Amaral
