@@ -78,6 +78,14 @@ button:hover {
     gap: 30px;
     width: 900px;
 }
+.container button {
+    margin: 25px;
+}
+.container button:hover {
+    animation-name: pulo;
+    animation-duration: 0.45s;
+    animation-iteration-count: infinite;
+}
 
 .tabela {
     width: 860px;
@@ -101,8 +109,8 @@ button:hover {
     align-items: center;
     gap: 30px;
     padding: 50px 20px;
-    background-color: #581411;
     border-radius: 12px;
+    background-image: linear-gradient(#581411, rgb(211, 211, 0));
 }
 #conquistas-imagem h2 {
     text-align: center;
@@ -193,6 +201,7 @@ button:hover {
     border-left: 5px solid #581411;
     border-radius: 10px;
     transition: 0.3s ease;
+    background-image: linear-gradient(to right, #f0cfaf, #fff);
 }
 .tabela ul li:hover {
     box-shadow: 0 4px 12px rgba(88, 20, 17, 0.15);
@@ -234,9 +243,39 @@ button:hover {
 #patrocinadores-imagens {
     display: flex;
     align-items: center;
+    height: 300px;
+}
+#patrocinadores-imagens a:hover {
+    animation-name: rodar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 #patrocinadores-imagens a, #patrocinadores-imagens img  {
     width: 100%;
+}
+
+@keyframes pulo {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    75% {
+        transform: translate(0, -15px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes rodar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media(max-width: 918px) {
