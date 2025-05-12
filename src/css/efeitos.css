@@ -60,10 +60,6 @@ Mas as novas adições não terão mais isso, apenas se for solicitado em Checkp
 }
 
 /*Efetios HISTORIA*/
-section.historia:nth-child(odd) {
-    background-color: antiquewhite;
-}
-
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
