@@ -104,7 +104,7 @@ Estrutura:
 
 ## 😎 Efeitos visuais
 
-### 🏠 `index.html` – Página inicial
+### 🏠 `index.html` – Home
 
 - Animação em botões da seção principal: os botões ganharam efeito de transição no `hover`, aumentando levemente o tamanho da fonte e simulando um deslocamento para baixo com `transform: translateY`.
 - Ícones de patrocinadores rotativos: os logos da seção de patrocinadores giram continuamente ao passar o mouse, usando `@keyframes rodar`.
@@ -120,13 +120,33 @@ Estrutura:
 
 ---
 
-### 🍷 `produtos.html` – Produtos
+### 🔐 `login-cadastro.html` – Login
+
+- Classe `.principal` com animação contínua: foi aplicada a propriedade `animation-name` com o valor `roxo_verde`, que define o nome da animação controlada por `@keyframes`.
+- Ciclo infinito de execução: com `animation-iteration-count: infinite`, a animação reinicia automaticamente sempre que termina, mantendo o fundo em constante movimento.
+- Duração de 3 segundos por ciclo: a propriedade `animation-duration: 3s` determina o tempo de cada ciclo de animação, criando um efeito suave e contínuo.
+- Definição da animação com `@keyframes`: o bloco `@keyframes roxo_verde` utiliza percentuais de `0%` a `100%`, alterando o `background-image` com `linear-gradient` em cada estágio para simular uma rotação de cores.
+- Animação semelhante na tela de cadastro: o mesmo efeito é aplicado com pequenas variações, utilizando `animation-name: efeito` e `@keyframes efeito`, adaptado ao visual da seção de cadastro.
+
+---
+
+### 🛍️ `produtos.html` – Produtos
 
 - Ícone do carrinho rotaciona no hover: pequenos efeitos de rotação foram aplicados para destacar interações com o ícone de carrinho.
 - Linha decorativa em títulos de categorias: a classe `.classificacao h1::before` adiciona uma linha horizontal antes do título, reforçando a hierarquia visual.
 - Efeito de brilho em promoções: itens com a classe `.promocao` piscam suavemente com o efeito `@keyframes aparecer`, destacando visuais promocionais.
 - Cartões de produto aumentam levemente no hover: animação de escala aplicada em `.cartao:hover` para destacar o item ao passar o mouse.
 - Botões com transição e ícone de seta ao lado: os botões da seção possuem transição de cor no hover e inserção dinâmica de seta com `::after`.
+
+---
+
+### 📬 `suporte.html` – Formulário de Contato
+
+- Animação de entrada suave no formulário com "@keyframes slideIn".
+- Destaque nos campos com ":focus" (borda e sombra ao clicar).
+- Botão com efeito ":hover" e "scale()" ao passar o mouse.
+- Campos alternados estilizados com "nth-child(odd)".
+- Ícone decorativo no título com ::after e seleção de texto personalizada com "selection."
 
 ---
 
