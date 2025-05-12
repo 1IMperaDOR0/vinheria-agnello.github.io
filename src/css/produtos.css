@@ -2,93 +2,71 @@
     box-sizing: border-box; 
 }
 
-.produtos {
-    padding: 0;
-}
-
-section {
-    padding: 45px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section:nth-child(odd) {
-    background-color: #eee;
-}
-
-section:nth-child(even) {
-    background-color: #fdf8f3;
-}
-
 .carrinho {
     width: 100%;
     background-color: #3a0300;
     padding: 25px 40px;
-    display: flex;
-    justify-content: end;
+    text-align: right;
 }
 
-.carrinho-icon {
+.icone-carrinho {
     min-width: 35px;
     min-height: 35px;
     background-color: #ddd;
     padding: 10px 15px;
     border-radius: 15px;
+    display: inline-block;
 }
 
-.container {
+.produtos {
+    padding: 45px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.classificacao {
     width: 900px;
-}
-
-.cards {
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 1rem; 
-    margin-top: 1rem; 
-}
-
-.cards div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    gap: 10px;
-    flex: 1 1 calc(33.333% - 1rem); 
-    max-width: calc(33.333% - 1rem); 
-    box-sizing: border-box; 
-    padding: 1rem;
-    text-align: center; 
-    border: 1px solid #ddd;
-    background-color: #fff;
+    margin: 0 auto;
 }
 
 h1 {
     font-size: 60px;
     text-align: center;
 }
+
+.cartoes {
+    text-align: center;
+    max-width: 900px;
+    margin: 20px auto 0;
+}
+
+.cartao {
+    display: inline-block;
+    width: 30%;
+    margin: 1% 1.5%;
+    vertical-align: top;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 img {
-    width: 4rem;
+    width: 70px;
 }
 
 .precos {
     font-weight: bold;
 }
 
-button {
+.botao-produtos {
     border: 0;
     border-radius: 25px;
     padding: 20px 50px;
-    margin-bottom: 45px;
     cursor: pointer;
     background-color: #581411;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
-    transition: 0.3s linear, color 0.3s linear;
 }
-button:hover {
-    background-color: #ddd;
-    color: #581411;
-}
+
