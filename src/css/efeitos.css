@@ -3,12 +3,22 @@
     background-color: #3a0300;
     color: #ccc;
 }
+section {
+    width: 100%;
+}
+section:nth-child(odd) {
+    background-color: #eee;
+}
+
+section:nth-child(even) {
+    background-color: #fdf8f3;
+}
 
 /*Efeitos HOME*/
-.botao-produtos {
+button {
     transition: 0.3s linear;
 }
-.container .botao-produtos:hover {
+.container button:hover {
     padding: 25px 55px;
     font-size: 23px;
     transform: translate(0, 15px);
@@ -19,7 +29,7 @@
     animation-iteration-count: infinite;
 }
 
-/*Desculpa por usar conceitos de Flexbox (como eu já tinha um pouco de conhecimento e utilizava nos meus projetos, pareceu algo "automático"),
+/* Lucas Sena -> Desculpa por usar conceitos de Flexbox (como eu já tinha um pouco de conhecimento e utilizava nos meus projetos, pareceu algo "automático"),
 porém não vou conseguir alterar tudo a tempo, ou seja, trocar os displays que contém flex, pois ia "quebrar" a estrutura do site. 
 Mas as novas adições não terão mais isso, apenas se for solicitado em Checkpoints futuros.*/
 
@@ -60,6 +70,10 @@ Mas as novas adições não terão mais isso, apenas se for solicitado em Checkp
 }
 
 /*Efetios HISTORIA*/
+section.historia:nth-child(odd) {
+    background-color: antiquewhite;
+}
+
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -71,7 +85,6 @@ Mas as novas adições não terão mais isso, apenas se for solicitado em Checkp
     transform: translateY(0);
 }
 
-/* Bloco decorativo animado */
 .barra-animada {
     width: 0;
     height: 8px;
@@ -85,18 +98,11 @@ Mas as novas adições não terão mais isso, apenas se for solicitado em Checkp
 .barra-animada.visible {
     width: 100%;
 }
+
 /*Efeitos PRODUTOS*/
 .icone-carrinho:hover {
     transform: rotate(15deg);
     transition: transform 0.3s ease;
-}
-
-.produtos:nth-of-type(2n-1) {
-    background-color: #eee;
-}
-
-.produtos:nth-of-type(2n) {
-    background-color: #fdf8f3;
 }
 
 .classificacao h1::before {
@@ -138,6 +144,7 @@ Mas as novas adições não terão mais isso, apenas se for solicitado em Checkp
     content: " →";
     font-weight: normal;
 }
+
 /*Efeitos LOGIN-CADASTRO*/
 
 
