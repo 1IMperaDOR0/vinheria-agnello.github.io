@@ -135,3 +135,46 @@ Mas as novas adições não terão mais isso, apenas se for solicitado em Checkp
 
 
 /*Efeitos SUPORTE*/
+#formulario-contato h1::after {
+    content: " 🍷";
+    font-size: 1.2rem;
+}
+
+::selection {
+    background-color: #5c2a2a;
+    color: white;
+}
+
+#formulario-contato input:focus,
+#formulario-contato textarea:focus {
+    border-color: #5c2a2a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(92, 42, 42, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#formulario-contato button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#formulario-contato .form-group:nth-child(odd) {
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#formulario-contato {
+    animation: slideIn 1s ease-in-out forwards;
+}
