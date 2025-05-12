@@ -60,8 +60,31 @@ Mas as novas adições não terão mais isso, apenas se for solicitado em Checkp
 }
 
 /*Efetios HISTORIA*/
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+/* Bloco decorativo animado */
+.barra-animada {
+    width: 0;
+    height: 8px;
+    background-color: #581411;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    transition: width 1.5s ease;
+}
+
+.barra-animada.visible {
+    width: 100%;
+}
 /*Efeitos PRODUTOS*/
 
 
