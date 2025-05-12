@@ -17,10 +17,19 @@ main {
     padding: 30px 40px;
     border-radius: 10px;
     color: #fff;
-    background-color: transparent;
+    animation-name: roxo_verde;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
     border: 2px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
-    backdrop-filter: blur(100px);
+}
+
+@keyframes roxo_verde{
+    0% {background-image: linear-gradient(to bottom, purple, green);}
+    25% {background-image: linear-gradient(to right, purple, green );}
+    50% {background-image: linear-gradient(to top, purple, green);}
+    75% {background-image: linear-gradient(to left, purple, green)}
+    100% {background-image: linear-gradient(to bottom, purple, green ) ;}
 }
 
 .principal h1 {
