@@ -104,33 +104,29 @@ Estrutura:
 
 ## 😎 Efeitos visuais
 
-### 🏠 `index.html` – Home
+### 🏠 `index.html` – Página inicial
 
+- Animação em botões da seção principal: os botões ganharam efeito de transição no `hover`, aumentando levemente o tamanho da fonte e simulando um deslocamento para baixo com `transform: translateY`.
+- Ícones de patrocinadores rotativos: os logos da seção de patrocinadores giram continuamente ao passar o mouse, usando `@keyframes rodar`.
 
 ---
 
 ### 📖 `historia.html` – História
 
+- Animação de entrada suave nos parágrafos: todos os parágrafos da seção receberam a classe `.fade-in`, que aplica um efeito de transição leve de opacidade e deslocamento vertical quando o conteúdo entra na tela.
+- Barras animadas decorativas: após cada parágrafo, foi adicionada uma `div` com a classe `.barra-animada`, que cresce horizontalmente ao entrar na viewport, simulando uma barra de destaque em movimento.
+- JavaScript com IntersectionObserver: um script foi inserido ao final do `body`, utilizando a API `IntersectionObserver` para detectar quando os elementos `.fade-in` e `.barra-animada` se tornam visíveis, adicionando a classe `.visible`.
+- Estilo modularizado: todas as animações foram organizadas dentro da seção `/* Efeitos HISTORIA */` no arquivo `efeitos.css`, mantendo a separação lógica e facilitando a manutenção.
 
 ---
 
-### 🛍️ `produtos.html` – Vinhos
+### 🍷 `produtos.html` – Produtos
 
-
----
-
-### 🔐 `login-cadastro.html` – Login
-
-
----
-
-### 📝 `cadastro.html` – Cadastro
-
-
----
-
-### 📬 `suporte.html` – Formulário de Contato
-
+- Ícone do carrinho rotaciona no hover: pequenos efeitos de rotação foram aplicados para destacar interações com o ícone de carrinho.
+- Linha decorativa em títulos de categorias: a classe `.classificacao h1::before` adiciona uma linha horizontal antes do título, reforçando a hierarquia visual.
+- Efeito de brilho em promoções: itens com a classe `.promocao` piscam suavemente com o efeito `@keyframes aparecer`, destacando visuais promocionais.
+- Cartões de produto aumentam levemente no hover: animação de escala aplicada em `.cartao:hover` para destacar o item ao passar o mouse.
+- Botões com transição e ícone de seta ao lado: os botões da seção possuem transição de cor no hover e inserção dinâmica de seta com `::after`.
 
 ---
 
