@@ -142,11 +142,11 @@ Estrutura:
 
 ### 📬 `suporte.html` – Formulário de Contato
 
-- Animação de entrada suave no formulário com "@keyframes slideIn".
-- Destaque nos campos com ":focus" (borda e sombra ao clicar).
-- Botão com efeito ":hover" e "scale()" ao passar o mouse.
-- Campos alternados estilizados com "nth-child(odd)".
-- Ícone decorativo no título com ::after e seleção de texto personalizada com "selection."
+- Animação de entrada com `@keyframes slideIn`: o formulário desliza suavemente para a tela ao ser carregado, aplicando uma transição de opacidade e deslocamento horizontal.
+- Destaque nos campos ao focar: ao clicar em um campo (`:focus`), ele recebe uma borda destacada e sombra suave, facilitando a visualização da seleção ativa.
+- Botão com efeito interativo no hover: ao passar o mouse, o botão de envio aumenta levemente com `transform: scale()`, dando uma sensação de clique iminente.
+- Estilo alternado nos campos: os campos ímpares do formulário recebem uma cor de fundo diferenciada usando `:nth-child(odd)`, melhorando a leitura e organização visual.
+- Ícone decorativo no título e seleção personalizada: um ícone é inserido no final do título com `::after`, e o estilo da seleção de texto (`::selection`) foi customizado para manter a identidade visual do site.
 
 ---
 
