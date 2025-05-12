@@ -10,6 +10,14 @@ section {
     align-items: center;
 }
 
+section:nth-child(odd) {
+    background-color: #eee;
+}
+
+section:nth-child(even) {
+    background-color: #fdf8f3;
+}
+
 .carrinho {
     width: 100%;
     background-color: #3a0300;

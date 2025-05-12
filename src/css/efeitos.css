@@ -3,16 +3,6 @@
     background-color: #3a0300;
     color: #ccc;
 }
-section {
-    width: 100%;
-}
-section:nth-child(odd) {
-    background-color: #eee;
-}
-
-section:nth-child(even) {
-    background-color: #fdf8f3;
-}
 
 /*Efeitos HOME*/
 button {
